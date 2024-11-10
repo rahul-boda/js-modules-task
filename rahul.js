@@ -4,7 +4,7 @@
 // Given an employee's work hours, print "Night Shift" if they work between 10 PM and 6 AM; otherwise, print "Day Shift."
 
 
-function time(hour){
+ export function time(hour){
     
     if (hour >= 22 || hour < 6) {
         console.log("Night Shift");
@@ -34,7 +34,7 @@ function time(hour){
 //    3) Discount Calculator
 // A store offers discounts: 10% if the bill is above $100, and 20% if it's above $200. Calculate the discount based on the input bill amount.
 
-function discount(input){
+ export function discount(input){
     var num=0;
     if(input >= 100 && input <= 200) {
        
@@ -53,7 +53,7 @@ function discount(input){
     // 4)
 // Elevator Capacity Check
 // An elevator has a maximum capacity of 500 kg. Given the weight of items entered, check if the elevator is overloaded.
-function weight(input){
+ export function weight(input){
     if( input >500){
        console.log("overload ")
     }
@@ -66,7 +66,7 @@ function weight(input){
 // E-commerce Order Validity
 // If a customer orders less than 5 items, print "Invalid order." If 5-10 items, print "Standard order," and for more than 10, print "Bulk order."
 
- function order(input){
+ export function order(input){
  if(input <= 5 ){
     console.log("Invalid Order")
  }
